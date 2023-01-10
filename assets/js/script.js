@@ -2,19 +2,27 @@ var computerScore = 0;
 var playerScore = 0;
 var round = 1;
 
+document.getElementById("round").innerHTML = "Round: " + round;
+document.getElementById("player-score").innerHTML = "Player Score: " + playerScore;
+document.getElementById("computer-score").innerHTML = "Computer Score: " + computerScore;
+
 function play(playerChoice) {
   var computerChoice = getComputerChoice();
   var result = getResult(playerChoice, computerChoice);
 
-  document.getElementById("result").innerHTML = "Round " + round + ": You chose " + playerChoice + ", the computer chose " + computerChoice + ". " + result + " <br> Your Score: " + playerScore + " Computer Score: " + computerScore;
+  document.getElementById("round").innerHTML = "Round: " + round;
+  document.getElementById("player-score").innerHTML = "Player Score: " + playerScore;
+  document.getElementById("computer-score").innerHTML = "Computer Score: " + computerScore;
+
+  document.getElementById("result").innerHTML = "You chose " + playerChoice + ", the computer chose " + computerChoice + ". " + result;
   round++;
   if(round>5){
       if(computerScore>playerScore){
-          document.getElementById("result").innerHTML += "<br> Computer wins the game!"
+          document.getElementById("result").innerHTML += "<br> You were smart, but the computer wins the game!"
       } else if (computerScore<playerScore) {
-          document.getElementById("result").innerHTML += "<br> You win the game!"
+          document.getElementById("result").innerHTML += "<br> Well done, you won the game! :D"
       } else {
-          document.getElementById("result").innerHTML += "<br> It's a tie!"
+          document.getElementById("result").innerHTML += "<br> But sadly, It's a tie!"
       }
   }
 }
@@ -27,7 +35,7 @@ function getComputerChoice() {
 
 function getResult(playerChoice, computerChoice) {
   if (playerChoice === computerChoice) {
-    return "It's a tie!";
+    return "Oops, it's a tie!";
   } else if (
     (playerChoice === "rock" && (computerChoice === "scissors" || computerChoice === "lizard")) ||
     (playerChoice === "paper" && (computerChoice === "rock" || computerChoice === "spock")) ||
@@ -36,9 +44,9 @@ function getResult(playerChoice, computerChoice) {
     (playerChoice === "spock" && (computerChoice === "scissors" || computerChoice === "rock"))
   ) {
     playerScore++;
-    return "You win!";
+    return "Yay, you win! :D";
   } else {
     computerScore++;
-    return "Computer wins!";
+    return "Oh no, the computer wins!";
   }
 }

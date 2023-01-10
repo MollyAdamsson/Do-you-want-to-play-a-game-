@@ -8,7 +8,7 @@
     <title>Do you want to play a game?</title>
 </head>
 <body>
-    <h1>Rock, Paper, Scissiors, Lizard or Spock?</h1>
+    <h1>Rock, Paper, Scissors, Lizard or Spock?</h1>
     <div id="game-area">
         <button id="rock" onclick="play('rock')">Rock</button>
         <button id="paper" onclick="play('paper')">Paper</button>
@@ -16,6 +16,11 @@
         <button id="lizard" onclick="play('lizard')">Lizard</button>
         <button id="spock" onclick="play('spock')">Spock</button>
     </div>
+    <div id="score-area">
+        <div id="round">Round: 1</div>
+        <div id="player-score">Player Score: 0</div>
+        <div id="computer-score">Computer Score: 0</div>
+      </div>
     <div id="result"></div>
     <script src="assets/js/script.js"></script>
 </body>
