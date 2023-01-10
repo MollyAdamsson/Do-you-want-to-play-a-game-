@@ -4,11 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Fontawesome link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/images/">
     <title>Rock, Paper, Scissors, Lizard and Spock!</title>
 </head>
+
 <body>
+<div id="container">
+
     <div id="game">
         <h2>Rock, Paper, Scissors, Lizard and Spock</h2>
+
+        <div id="rules">
+            <h3 id="rule-ttile">Rules:</h3>
+            <ul id="rule-list"></ul>
+        </div>
+
         <p>Choose your weapon:</p>
         <button id="rock" class="weapon">Rock</button>
         <button id="paper" class="weapon">Paper</button>
@@ -16,6 +33,13 @@
         <button id="lizard" class="weapon">Lizard</button>
         <button id="spock" class="weapon">Spock</button>
     </div>
-    
+
+</div>
+
+    <div id="result"></div>
+
+
+
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
