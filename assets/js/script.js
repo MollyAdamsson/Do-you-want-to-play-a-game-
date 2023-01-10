@@ -1,14 +1,14 @@
-var computerScore = 0;
-var playerScore = 0;
-var round = 1;
+let computerScore = 0;
+let playerScore = 0;
+let round = 1;
 
 document.getElementById("round").innerHTML = "Round: " + round;
 document.getElementById("player-score").innerHTML = "Player Score: " + playerScore;
 document.getElementById("computer-score").innerHTML = "Computer Score: " + computerScore;
 
 function play(playerChoice) {
-  var computerChoice = getComputerChoice();
-  var result = getResult(playerChoice, computerChoice);
+  let computerChoice = getComputerChoice();
+  let result = getResult(playerChoice, computerChoice);
 
   document.getElementById("round").innerHTML = "Round: " + round;
   document.getElementById("player-score").innerHTML = "Player Score: " + playerScore;
@@ -28,8 +28,8 @@ function play(playerChoice) {
 }
 
 function getComputerChoice() {
-  var choices = ["rock", "paper", "scissors", "lizard", "spock"];
-  var randomIndex = Math.floor(Math.random() * 5);
+  let choices = ["rock", "paper", "scissors", "lizard", "spock"];
+  let randomIndex = Math.floor(Math.random() * 5);
   return choices[randomIndex];
 }
 
@@ -50,3 +50,4 @@ function getResult(playerChoice, computerChoice) {
     return "Oh no, the computer wins!";
   }
 }
+
