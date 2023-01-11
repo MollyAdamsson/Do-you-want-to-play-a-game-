@@ -4,14 +4,26 @@ body {
     text-align: center;
   }
 
-  #main-image {
-    width: 18%;
-    height: 18%;
-    display: block;
-    margin: auto;
-    object-fit: contain;
-  }
-  
+.flip-card {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+#main-image {
+  transform: rotateY(0deg);
+}
+
+#back-card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
+
+.flip-card.flip {
+  transform: rotateY(180deg);
+}
   #game-area {
     display: flex;
     justify-content: center;

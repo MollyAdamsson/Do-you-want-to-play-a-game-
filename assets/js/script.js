@@ -51,3 +51,11 @@ function getResult(playerChoice, computerChoice) {
   }
 }
 
+const card = document.getElementById("rules");
+const front = document.getElementById("main-image");
+const back = document.getElementById("back-card");
+
+front.addEventListener("click", function() {
+    card.classList.toggle("flip");
+});
+
