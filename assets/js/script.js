@@ -6,6 +6,13 @@ document.getElementById("round").innerHTML = "Round: " + round;
 document.getElementById("player-score").innerHTML = "Player Score: " + playerScore;
 document.getElementById("computer-score").innerHTML = "Computer Score: " + computerScore;
 
+function resetGame() {
+  stopTimer();
+  resetTimer();
+  startGame();
+}
+
+
 function play(playerChoice) {
   let computerChoice = getComputerChoice();
   let result = getResult(playerChoice, computerChoice);
