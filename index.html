@@ -7,8 +7,13 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <title>Do you want to play a game?</title>
 </head>
+
 <body>
     <h1>Rock, Paper, Scissors, Lizard or Spock?</h1>
+    <div>
+        <label for="volume-slider">Volume: </label>
+        <input type="range" min="0" max="100" value="50" id="volume-slider" name="volume-slider">
+    </div>
 
     <div id="rules">
         <h3>Rules and how to play the game:</h3>
@@ -29,13 +34,27 @@
         <button id="lizard" onclick="play('lizard')">Lizard</button>
         <button id="spock" onclick="play('spock')">Spock</button>
     </div>
+
     <div id="score-area">
         <div id="round">Round: 1</div>
         <div id="player-score">Player Score: 0</div>
         <div id="computer-score">Computer Score: 0</div>
-      </div>
+    </div>
+
+        <audio id="audio-rock" src="assets/audio/rock.wav"></audio>
+        <audio id="audio-paper" src="assets/audio/paper.wav"></audio>
+        <audio id="audio-scissors" src="assets/audio/scissors.wav"></audio>
+        <audio id="audio-lizard" src="assets/audio/lizzard.mp3"></audio>
+        <audio id="audio-spock" src="assets/audio/laser.wav"></audio>
+
+        <div id="sound-controls" class="info-holder">
+            <button aria-label="Sound settings button" name="sound-setting-button" class="sound-button"><i class="fas fa-volume-up"></i></button>
+        </div>
+    
     <div id="result"></div>
+
     <script src="assets/js/script.js"></script>
     <script src="assets/js/audio.js"></script>
+
 </body>
 </html>
