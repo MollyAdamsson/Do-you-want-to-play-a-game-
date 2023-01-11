@@ -10,9 +10,9 @@
 
 <body>
     <h1>Rock, Paper, Scissors, Lizard or Spock?</h1>
-    <div>
-        <label for="volume-slider">Volume: </label>
-        <input type="range" min="0" max="100" value="50" id="volume-slider" name="volume-slider">
+
+    <div class="info-holder">
+        <span id="timer"></span>
     </div>
 
     <div id="rules">
@@ -28,28 +28,24 @@
     </div>
 
     <div id="game-area">
-        <button id="rock" onclick="play('rock')">Rock</button>
-        <button id="paper" onclick="play('paper')">Paper</button>
-        <button id="scissors" onclick="play('scissors')">Scissors</button>
-        <button id="lizard" onclick="play('lizard')">Lizard</button>
-        <button id="spock" onclick="play('spock')">Spock</button>
+        <button id="rock" onclick="playRock(); play('rock')">Rock</button>
+        <button id="paper" onclick="playPaper(); play('paper')">Paper</button>
+        <button id="scissors" onclick="playScissors(); play('scissors')">Scissors</button>
+        <button id="lizard" onclick="playLizard(); play('lizard')">Lizard</button>
+        <button id="spock" onclick="playSpock(); play('spock')">Spock</button>
     </div>
+
+    <audio id="rocksound" src="assets/audio/rock.wav"></audio>
+    <audio id="papersound" src="assets/audio/paper.wav"></audio>
+    <audio id="scissorssound" src="assets/audio/scissors.wav"></audio>
+    <audio id="lizardsound" src="assets/audio/lizzard.mp3"></audio>
+    <audio id="spocksound" src="assets/audio/laser.wav"></audio>
 
     <div id="score-area">
         <div id="round">Round: 1</div>
         <div id="player-score">Player Score: 0</div>
         <div id="computer-score">Computer Score: 0</div>
     </div>
-
-        <audio id="audio-rock" src="assets/audio/rock.wav"></audio>
-        <audio id="audio-paper" src="assets/audio/paper.wav"></audio>
-        <audio id="audio-scissors" src="assets/audio/scissors.wav"></audio>
-        <audio id="audio-lizard" src="assets/audio/lizzard.mp3"></audio>
-        <audio id="audio-spock" src="assets/audio/laser.wav"></audio>
-
-        <div id="sound-controls" class="info-holder">
-            <button aria-label="Sound settings button" name="sound-setting-button" class="sound-button"><i class="fas fa-volume-up"></i></button>
-        </div>
     
     <div id="result"></div>
 

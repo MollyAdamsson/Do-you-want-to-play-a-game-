@@ -7,7 +7,6 @@ document.getElementById("player-score").innerHTML = "Player Score: " + playerSco
 document.getElementById("computer-score").innerHTML = "Computer Score: " + computerScore;
 
 function play(playerChoice) {
-  playAudio(playerChoice); 
   let computerChoice = getComputerChoice();
   let result = getResult(playerChoice, computerChoice);
 
