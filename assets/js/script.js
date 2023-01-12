@@ -6,17 +6,6 @@ document.getElementById("round").innerHTML = "Round: " + round;
 document.getElementById("player-score").innerHTML = "Player Score: " + playerScore;
 document.getElementById("computer-score").innerHTML = "Computer Score: " + computerScore;
 
-function ruleMessage() {
-  document.querySelector("#rules-message").addEventListener('click', function(){
-    document.getElementById('rules-message').style.display = 'none';
-  });
-
-  document.getElementById('rules-message-close-start').addEventListener('click', function() {
-    document.getElementById('rules-message').style.display = 'none';
-    startGame();
-  });
-}
-
 function startGame() {
   numMatch = 0;
   moves = 0;
@@ -26,27 +15,20 @@ function startGame() {
   showSound();
 }
 
-function showRules() {}
-  document.querySelector('#rule-button').addEventListener('click', function(){
-      document.getElementById('rules-message').style.display = 'block';
-  });
+let timer;
 
-  let timeButton = document.querySelector("#time-button");
-  let timer = 0;
-  let intervalId;
-
-  timeButton.addEventListener("click", function(){
-    if(intervalId) {
-      clearInterval(intervalId);
-      intervalId = null;
-      timeButton.innerHTML = "Start Timer";
-    } else {
-      intervalId = setInterval(function(){
-        timer++;
-        timerButton.innerHTML = `Timer: ${timer}s`;
-      }, 1000);
+document.getElementById("time-button").addEventListener("click", function(){
+  clearInterval(timer);
+  let time = 30;
+  document.getElementById("time-button").innerHTML = "Time: " + time;
+  timer = setInterval(function(){
+    time--;
+    document.getElementById("time-button").innerHTML = "Time: " + time;
+    if(time === 0){
+      clearInterval(timer);
     }
-  });
+  }, 1000);
+});
 
 function play(playerChoice) {
   let computerChoice = getComputerChoice();
