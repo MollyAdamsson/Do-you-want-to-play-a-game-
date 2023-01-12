@@ -15,6 +15,7 @@ function resetGame() {
   document.getElementById("round").innerHTML = "Round: " + round;
   document.getElementById("player-score").innerHTML = "Player Score: " + playerScore;
   document.getElementById("computer-score").innerHTML = "Computer Score: " + computerScore;
+  
   clearInterval(timer);
   let time = 30;
   document.getElementById("time-button").innerHTML = "Time: " + time;
@@ -25,6 +26,8 @@ function resetGame() {
       clearInterval(timer);
     }
   }, 1000);
+  
+  document.getElementById("result").innerHTML ="";
 }
 
 let timer;
