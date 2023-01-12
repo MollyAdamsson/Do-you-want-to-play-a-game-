@@ -1,54 +1,51 @@
-
 body {
-    background-color: #ffffff;
-    text-align: center;
-  }
+  background-color: #ffffff;
+  text-align: center;
+}
 
-  #rules {
-    perspective: 1000px;
-    transform-style: preserve-3d;
-  }
-  
-  #main-image {
-    transform: rotateY(0deg);
-    transition: transform 0.5s ease-in-out;
-  }
-  
-  #main-image:hover {
-    transform: rotateY(180deg);
-  }
-  
-  #back-card {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    transform: rotateY(180deg);
-  }
+#main-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
 
-.flip-card.flip {
-  transform: rotateY(180deg);
+#main-buttons button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  border-radius: 25px;
+  background-color: #80070f;
+  color: white;
+  border: none;
+  box-shadow: 2px 2px #D3D3D3;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+#main-buttons button:hover {
+  background-color: #8f3753;
+  transform: scale(1.1);
 }
 
 #game-area {
-  display: flex;
-  justify-content: center;
+display: flex;
+justify-content: center;
 }
-  
-  button {
-    margin: 0 10px;
-    padding: 10px 20px;
-    font-size: 1.2em;
-    border-radius: 25px;
-    background-color: #006400;
-    color: white;
-    border: none;
-    box-shadow: 2px 2px #D3D3D3;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  button:hover {
-    background-color: #3CB371;
-    transform: scale(1.1);
-  }
+
+button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  border-radius: 25px;
+  background-color: #006400;
+  color: white;
+  border: none;
+  box-shadow: 2px 2px #D3D3D3;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #3CB371;
+  transform: scale(1.1);
+}
