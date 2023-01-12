@@ -15,6 +15,17 @@ function startGame() {
   showSound();
 }
 
+document.getElementById("reset-button").addEventListener("click", resetGame);
+
+function resetGame() {
+  computerScore = 0;
+  playerScore = 0;
+  round = 1;
+  document.getElementById("round").innerHTML = "Round: " + round;
+  document.getElementById("player-score").innerHTML = "Player Score: " + playerScore;
+  document.getElementById("computer-score").innerHTML = "Computer Score: " + computerScore;
+}
+
 let timer;
 
 document.getElementById("time-button").addEventListener("click", function(){
