@@ -6,15 +6,6 @@ document.getElementById("round").innerHTML = "Round: " + round;
 document.getElementById("player-score").innerHTML = "Player Score: " + playerScore;
 document.getElementById("computer-score").innerHTML = "Computer Score: " + computerScore;
 
-function startGame() {
-  numMatch = 0;
-  moves = 0;
-  ruleMessage();
-  resetTimer();
-  showRules();
-  showSound();
-}
-
 document.getElementById("reset-button").addEventListener("click", resetGame);
 
 function resetGame() {
@@ -24,6 +15,16 @@ function resetGame() {
   document.getElementById("round").innerHTML = "Round: " + round;
   document.getElementById("player-score").innerHTML = "Player Score: " + playerScore;
   document.getElementById("computer-score").innerHTML = "Computer Score: " + computerScore;
+  clearInterval(timer);
+  let time = 30;
+  document.getElementById("time-button").innerHTML = "Time: " + time;
+  timer = setInterval(function() {
+    time--;
+    document.getElementById("time-button").innerHTML = "Time: " + time;
+    if(time === 0){
+      clearInterval(timer);
+    }
+  }, 1000);
 }
 
 let timer;
