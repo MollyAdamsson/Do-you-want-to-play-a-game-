@@ -1,6 +1,6 @@
 body { 
   font-family: Helvetica, sans-serif;
-  background-color: #ffffff;
+  background-color: #b9779d;
   text-align: center;
 }
 
@@ -44,44 +44,48 @@ h2 {
   justify-content: center;
 }
 
-#result {
-  text-align: center;
+#score-area-2 {
+  display: flex;
+  justify-content: center;
 }
 
-
 .round-box-1 {
-  border-radius: 60%; 
-  background-color: blue;
-  padding: 20px;
+  background-color: #80070f;
+  grid-column: 1/2;
+  padding: 5px;
+  border-radius: 20px;
   box-shadow: 2px 2px 5px gray;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .round-box-2 {
-  border-radius: 60%;
-  background-color: blue;
-  padding: 20px;
+  background-color: #80070f;
+  grid-column: 2/3;
+  padding: 5px;
+  border-radius: 20px;
   box-shadow: 2px 2px 5px gray;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .round-box-3 {
-  border-radius: 60%;
-  background-color: blue;
-  padding: 20px;
+  background-color: #80070f;
+  grid-column: 3/4;
+  padding: 5px;
+  border-radius: 20px;
   box-shadow: 2px 2px 5px gray;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-.round-box-1, .round-box-2, .round-box-3 {
+.round-box-1, .round-box-3 {
+  font-family: 'Courier New', Courier, monospace;
   width: 13%; 
   margin: 0 10px;
+  color:#ffffff;
+  flex-shrink: 0;
+}
+
+.round-box-2 {
+  font-family: 'Courier New', Courier, monospace;
+  width: 13%; 
+  margin: 0 10px;
+  color:#ffffff;
 }
 
 button {
