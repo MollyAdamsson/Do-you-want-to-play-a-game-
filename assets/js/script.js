@@ -15,7 +15,7 @@ function resetGame() {
   document.getElementById("round").innerHTML = "Round: " + round;
   document.getElementById("player-score").innerHTML = "Player Score: " + playerScore;
   document.getElementById("computer-score").innerHTML = "Computer Score: " + computerScore;
-  
+
   clearInterval(timer);
   let time = 30;
   document.getElementById("time-button").innerHTML = "Time: " + time;
@@ -44,6 +44,19 @@ timer = setInterval(function(){
   }
 }, 1000);
 });
+
+let isMuted = false;
+
+document.getElementById("mute-button").addEventListener("click", toggleMute);
+
+  function toggleMute() {
+    isMuted = !isMuted;
+    let audioElements = document.getElementsByTagName("audio");
+    for (let i = 0; i < audioElements.length; i++) {
+      audioElements[i].volume = isMuted ? 0 : 1;
+    }
+    document.getElementById("mute-button").innerHTML = isMuted ? "Unmute" : "Mute";
+  }
 
 function play(playerChoice) {
   let computerChoice = getComputerChoice();
