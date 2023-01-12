@@ -30,7 +30,23 @@ function showRules() {}
   document.querySelector('#rule-button').addEventListener('click', function(){
       document.getElementById('rules-message').style.display = 'block';
   });
-  
+
+  let timeButton = document.querySelector("#time-button");
+  let timer = 0;
+  let intervalId;
+
+  timeButton.addEventListener("click", function(){
+    if(intervalId) {
+      clearInterval(intervalId);
+      intervalId = null;
+      timeButton.innerHTML = "Start Timer";
+    } else {
+      intervalId = setInterval(function(){
+        timer++;
+        timerButton.innerHTML = `Timer: ${timer}s`;
+      }, 1000);
+    }
+  });
 
 function play(playerChoice) {
   let computerChoice = getComputerChoice();
@@ -76,12 +92,3 @@ function getResult(playerChoice, computerChoice) {
     return "Oh no, the computer wins!";
   }
 }
-
-const card = document.getElementById("rules");
-const front = document.getElementById("main-image");
-const back = document.getElementById("back-card");
-
-front.addEventListener("click", function() {
-    card.classList.toggle("flip");
-});
-
