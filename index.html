@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <title>Do you want to play a game?</title>
 </head>
@@ -15,7 +18,7 @@
     <div id="main-buttons">
         <button id="time-button">Start Game</button>
         <button id="reset-button">Reset Game</button>
-        <button id="mute-button">Mute Game</button>
+        <button id="mute-button">Mute Game <i class="fa-solid fa-music"></i></button>
     </div>
 
     <div id="rules" class="rules-contain">
@@ -32,16 +35,14 @@
             </p>
             <br>    
     </div>
-
     <br>
         <div id="score-area">
-        <div id="round">Round: 1</div>
-        <div id="player-score">Player Score: 0</div>
-        <div id="computer-score">Computer Score: 0</div>
+        
+        <div id="player-score" class="round-box-1">Player Score: 0</div>
+        <div id="round" class="round-box-2">Round: 1<div id="result"></div></div>
+        <div id="computer-score" class="round-box-3">Computer Score: 0</div>
     </div>
-    <br>
-    <div id="result"></div>
-    <br>
+<br>
 
     <div id="game-area">
         <button id="rock" onclick="playRock(); play('rock')">Rock</button>

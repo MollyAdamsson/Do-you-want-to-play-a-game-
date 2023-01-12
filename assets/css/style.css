@@ -16,8 +16,6 @@ h2 {
   font-size: 1.2em;
 }
 
-
-
 #main-buttons button {
   margin: 0 10px;
   padding: 10px 60px;
@@ -37,8 +35,53 @@ h2 {
 }
 
 #game-area {
-display: flex;
-justify-content: center;
+  display: flex;
+  justify-content: center;
+}
+
+#score-area {
+  display: flex;
+  justify-content: center;
+}
+
+#result {
+  text-align: center;
+}
+
+
+.round-box-1 {
+  border-radius: 60%; 
+  background-color: blue;
+  padding: 20px;
+  box-shadow: 2px 2px 5px gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.round-box-2 {
+  border-radius: 60%;
+  background-color: blue;
+  padding: 20px;
+  box-shadow: 2px 2px 5px gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.round-box-3 {
+  border-radius: 60%;
+  background-color: blue;
+  padding: 20px;
+  box-shadow: 2px 2px 5px gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.round-box-1, .round-box-2, .round-box-3 {
+  width: 13%; 
+  margin: 0 10px;
 }
 
 button {
