@@ -15,10 +15,6 @@ function startGame() {
   showSound();
 }
 
-window.onload = function() {
-  startGame();
-}
-
 let timer;
 
 document.getElementById("time-button").addEventListener("click", function(){
