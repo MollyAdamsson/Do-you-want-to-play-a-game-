@@ -15,19 +15,23 @@ function startGame() {
   showSound();
 }
 
+window.onload = function() {
+  startGame();
+}
+
 let timer;
 
 document.getElementById("time-button").addEventListener("click", function(){
-  clearInterval(timer);
-  let time = 30;
+clearInterval(timer);
+let time = 30;
+document.getElementById("time-button").innerHTML = "Time: " + time;
+timer = setInterval(function(){
+  time--;
   document.getElementById("time-button").innerHTML = "Time: " + time;
-  timer = setInterval(function(){
-    time--;
-    document.getElementById("time-button").innerHTML = "Time: " + time;
-    if(time === 0){
-      clearInterval(timer);
-    }
-  }, 1000);
+  if(time === 0){
+    clearInterval(timer);
+  }
+}, 1000);
 });
 
 function play(playerChoice) {
