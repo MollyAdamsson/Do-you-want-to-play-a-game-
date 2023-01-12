@@ -6,6 +6,32 @@ document.getElementById("round").innerHTML = "Round: " + round;
 document.getElementById("player-score").innerHTML = "Player Score: " + playerScore;
 document.getElementById("computer-score").innerHTML = "Computer Score: " + computerScore;
 
+function ruleMessage() {
+  document.querySelector("#rules-message").addEventListener('click', function(){
+    document.getElementById('rules-message').style.display = 'none';
+  });
+
+  document.getElementById('rules-message-close-start').addEventListener('click', function() {
+    document.getElementById('rules-message').style.display = 'none';
+    startGame();
+  });
+}
+
+function startGame() {
+  numMatch = 0;
+  moves = 0;
+  ruleMessage();
+  resetTimer();
+  showRules();
+  showSound();
+}
+
+function showRules() {}
+  document.querySelector('#rule-button').addEventListener('click', function(){
+      document.getElementById('rules-message').style.display = 'block';
+  });
+  
+
 function play(playerChoice) {
   let computerChoice = getComputerChoice();
   let result = getResult(playerChoice, computerChoice);
