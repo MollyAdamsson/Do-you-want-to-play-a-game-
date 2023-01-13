@@ -13,17 +13,13 @@
 
 <body>
 
-    <h1 class="main-logo">Rock, Paper, Scissors, Lizard or Spock?</h1>
+    <h1 id="main-title" class="main-logo">Rock, Paper, Scissors, Lizard or Spock?</h1>
 
     <div id="main-buttons">
         <button id="time-button">Start Game</button>
         <button id="reset-button">Reset Game <i class="fa-solid fa-arrows-rotate"></i></button>
         <button id="mute-button">Mute Game</button>
     </div>
-
-    <div id="second-header">
-         <h2>Rock, Paper, Scissors, Lizard, Spock is a game of 
-        chance that expands the traditional game of Rock, Paper, Scissors.</h2> 
 
         <br>
 
@@ -34,29 +30,31 @@
             <button id="lizard" onclick="playLizard(); play('lizard')">Lizard <i class="fa-solid fa-hand-lizard"></i></button>
             <button id="spock" onclick="playSpock(); play('spock')">Spock <i class="fa-solid fa-hand-spock"></i></button>
         </div>
+
         <br>
-    </div>
+
+        <div id="score-area">
+            <div id="player-score" class="round-box-1">Player Score: 0</div>
+            <div id="round" class="round-box-2">Round: 1</div>
+            <div id="computer-score" class="round-box-3">CPU Score: 0</div>
+        </div>
+        <br>
     <div id="rules" class="box-rules">
-            <h4>This is how you play</h4>
-            <p>The main idea of this game is the same as with an ordinary round of rock, paper, scissors. <br>
-            The only difference is that this game has som extra options for you to choose between. <br>
-            Click on the button that says "Start Game" to set off the timer.<br>
-            You then have 30 seconds and 5 rounds to finish the game.<br>
+        <h3>Rock, Paper, Scissors, Lizard, Spock is a game of 
+            chance that expands the traditional game of Rock, Paper, Scissors.</h3> 
+        <div class="info-container">
+            <p id="info-left">The main idea of this game is the same as with an ordinary round of rock, paper, scissors.
+            The only difference is that this game has some extra options for you to choose between.</p>
+            <div id="result" class="result-box"></div>
+            <p id="info-right">Click on the button that says "Start Game" to set off the timer.<br>
+            You then have 30 seconds and 5 rounds to finish the game.
             Which weapon will you chose?</p>
-            <br>    
+        </div>
+        <br>    
     </div>
 
     <br>
-        <div id="score-area">
-            <div id="player-score" class="round-box-1">Player Score: 0</div>
-            <div class="round-box-2">
-            <div id="round">Round: 1</div>
-            <div id="result"></div>
-            </div>
-            <div id="computer-score" class="round-box-3">CPU Score: 0</div>
 
-        </div>
-        <br>
     
     <audio id="rocksound" src="assets/audio/rock.wav"></audio>
     <audio id="papersound" src="assets/audio/paper.wav"></audio>

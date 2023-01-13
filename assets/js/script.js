@@ -108,7 +108,6 @@ function play(playerChoice) {
   }
 }
 
-
 function getComputerChoice() {
   let choices = ["rock", "paper", "scissors", "lizard", "spock"];
   let randomIndex = Math.floor(Math.random() * 5);
