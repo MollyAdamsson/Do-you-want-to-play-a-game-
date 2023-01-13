@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Urbanist:wght@300&display=swap');
+
 body { 
   background-color: #3661b0;
   background-attachment: fixed;
@@ -7,13 +8,10 @@ body {
   text-align: center;
 }
 
-body h1 {
-  font-family: Luckiest-guy, sans-serif;
-}
-
-.main-logo {
-  font-family:;
-  color: #ffffff;
+#main-title {
+font-family: Luckiest guy, sans-serif; 
+color: white;
+letter-spacing: 0.2cm;
 }
 
 #main-buttons {
@@ -23,9 +21,11 @@ body h1 {
 }
 
 h3 {
-  margin: 0 10px;
+  margin: 0 5px;
   padding: 15px 10px;
-  font-family: Urbanist, sans-serif;
+  font-family: Luckiest guy, sans-serif;
+  letter-spacing: 0.1cm;
+  font-size: 1.5em;
 }
 
 .box-rules {
