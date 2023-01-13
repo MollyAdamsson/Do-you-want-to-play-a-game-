@@ -1,6 +1,7 @@
 let computerScore = 0;
 let playerScore = 0;
 let round = 1;
+let isTiming = false;
 
 document.getElementById("round").innerHTML = "Round: " + round;
 document.getElementById("player-score").innerHTML = "Player Score: " + playerScore;
@@ -17,32 +18,31 @@ function resetGame() {
   document.getElementById("computer-score").innerHTML = "Computer Score: " + computerScore;
 
   clearInterval(timer);
-  let time = 30;
-  document.getElementById("time-button").innerHTML = "Time: " + time;
-  timer = setInterval(function() {
-    time--;
-    document.getElementById("time-button").innerHTML = "Time: " + time;
-    if(time === 0){
-      clearInterval(timer);
-    }
-  }, 1000);
-  
+  document.getElementById("time-button").innerHTML = "Start Game";
+  isTiming = false;
   document.getElementById("result").innerHTML ="";
 }
 
 let timer;
 
 document.getElementById("time-button").addEventListener("click", function(){
-clearInterval(timer);
-let time = 30;
-document.getElementById("time-button").innerHTML = "Time: " + time;
-timer = setInterval(function(){
-  time--;
-  document.getElementById("time-button").innerHTML = "Time: " + time;
-  if(time === 0){
+  if(!isTiming){
     clearInterval(timer);
+    let time = 30;
+    document.getElementById("time-button").innerHTML = "Time: " + time;
+    timer = setInterval(function(){
+      time--;
+      document.getElementById("time-button").innerHTML = "Time: " + time;
+      if(time === 0){
+        clearInterval(timer);
+        document.getElementById("time-button").innerHTML = "Start Game";
+        isTiming = false;
+      }
+    }, 1000);
+    isTiming = true;
+  }else{
+    return;
   }
-}, 1000);
 });
 
 let isMuted = false;
