@@ -25,6 +25,35 @@ function resetGame() {
 
 let timer;
 
+function startTimer(){
+  if(!isTiming){
+    clearInterval(timer);
+    let time = 30;
+    document.getElementById("time-button").innerHTML = "Time: " + time;
+    timer = setInterval(function(){
+      time--;
+      document.getElementById("time-button").innerHTML = "Time: " + time;
+      if(time === 0){
+        clearInterval(timer);
+        document.getElementById("time-button").innerHTML = "Start Game";
+        isTiming = false;
+      }
+    }, 1000);
+    isTiming = true;
+  }else{
+    return;
+  }
+}
+
+document.getElementById("rock").addEventListener("click", startTimer);
+document.getElementById("paper").addEventListener("click", startTimer);
+document.getElementById("scissors").addEventListener("click", startTimer);
+document.getElementById("scissors").addEventListener("click", startTimer);
+document.getElementById("lizard").addEventListener("click", startTimer);
+document.getElementById("spock").addEventListener("click", startTimer);
+document.getElementById("time-button").addEventListener("click", startTimer);
+
+
 document.getElementById("time-button").addEventListener("click", function(){
   if(!isTiming){
     clearInterval(timer);
@@ -70,14 +99,15 @@ function play(playerChoice) {
   round++;
   if(round>5){
       if(computerScore>playerScore){
-          document.getElementById("result").innerHTML += "<br> You were smart, but the computer wins the game!"
+          document.getElementById("result").innerHTML += "<br> You were smart, but the computer wins the game!";
       } else if (computerScore<playerScore) {
-          document.getElementById("result").innerHTML += "<br> Well done, you won the game! :D"
+          document.getElementById("result").innerHTML += "<br> Well done, you won the game! :D";
       } else {
-          document.getElementById("result").innerHTML += "<br> But sadly, It's a tie!"
+          document.getElementById("result").innerHTML += "<br> But sadly, It's a tie!";
       }
   }
 }
+
 
 function getComputerChoice() {
   let choices = ["rock", "paper", "scissors", "lizard", "spock"];
