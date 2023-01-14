@@ -6,7 +6,7 @@ These extra options were first introduced in an episode of The Big Bang Theory w
 
 Click [*HERE*](https://mollyadamsson.github.io/Rock-Paper-Scissors-Lizard-and-Spock-Game/) to start playing!
 
-- image of the responsive design here - 
+![Responsive design image](readme.images/final.look.png/)
 
 # User Experience (UX)
 
@@ -19,12 +19,17 @@ Click [*HERE*](https://mollyadamsson.github.io/Rock-Paper-Scissors-Lizard-and-Sp
 
 ## Wireframes 
 
-- image of wireframes here - 
+![Responsive design image](readme.images/wireframe.png)
+
+This was the first mock up I did for the game, and i was looking for a visual display like this the whole time.
 
 ## The structure of the site 
 
-This game is as explained based on the basic game of rock, paper and scissors. It is a game of chance where two, or more, contestants play against each other. This game has some extra features which are the lizard and spock options.  
+This game is as explained based on the basic game of rock, paper and scissors. It is a game of chance where two, or more, contestants play against each other. This game has some extra features which are the lizard and Spock options.  
 <br>
+When entering on to the siteyou are met with a display of blue. This was added with the idea of giving the user a welcoming and warm feeling.
+<br>
+There is a header at the top which present the game, underneath you can find three buttons, each with their own ability. Underneath that you can find five more buttons which represents the meaning of the game.  
 
 
 
