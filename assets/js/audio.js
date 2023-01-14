@@ -1,3 +1,7 @@
+/**Plays a certain sound everytime a one of the game area buttons are clicked. 
+ * They all have a sound that is relevant to the name of the button.
+ * 
+*/
 function playRock() {
     let audio = document.getElementById('rocksound');
     audio.play();

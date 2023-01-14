@@ -17,60 +17,13 @@ letter-spacing: 0.3cm;
 font-size: 40px;
 }
 
+/* The start game, reset game and mute button  */
+
 #main-buttons {
   display: flex;
   justify-content: center;
   margin-top: 10px;
   font-family: Nabla, sans-serif;
-}
-
-h3 {
-  margin: 0 5px;
-  padding: 15px 10px;
-  font-family: Urbanist, sans-serif;
-  letter-spacing: 0.1cm;
-  font-size: 1.5em;
-}
-
-.box-rules {
-  margin: 0 10px;
-  padding: 5px 25px;
-  font-size: 1.2em;
-  border-radius: 80px;
-  background-color: #264f7d;
-  color: #ffffff;
-  box-shadow: 5px 5px 7px gray;
-}
-
-.info-container {
-  display: flex;
-  justify-content: space-between;
-  letter-spacing: 2px;
-  justify-content: space-around;
-  
-}
-
-#info-left {
-  width: 30%;
-  text-align: left;
-  font-family: Urbanist, sans-serif;
-}
-
-#info-right {
-  width: 30%;
-  text-align: right;
-  font-family: Urbanist, sans-serif;
-}
-
-.result-box {
-  background-color: ;
-  grid-column: 1/2;
-  padding: 5px;
-  border-radius: 20px;
-  width: 20%;
-  height: 20%;
-  box-sizing: fixed;
-  font-family: Urbanist, sans-serif;
 }
 
 #main-buttons button {
@@ -92,17 +45,13 @@ h3 {
   transform: scale(1.1);
 }
 
+/* Game area, the player score, the CPU score and round */
 #game-area {
   display: flex;
   justify-content: center;
 }
 
 #score-area {
-  display: flex;
-  justify-content: center;
-}
-
-#score-area-2 {
   display: flex;
   justify-content: center;
 }
@@ -162,6 +111,56 @@ button {
 button:hover {
   background-color: #3CB371;
   transform: scale(1.1);
+}
+
+/* The box containing information and result */
+.box-rules {
+  margin: 0 10px;
+  padding: 5px 25px;
+  font-size: 1.2em;
+  border-radius: 80px;
+  background-color: #264f7d;
+  color: #ffffff;
+  box-shadow: 5px 5px 7px gray;
+}
+
+.info-container {
+  display: flex;
+  justify-content: space-between;
+  letter-spacing: 2px;
+  justify-content: space-around;
+  
+}
+
+h3 {
+  margin: 0 5px;
+  padding: 15px 10px;
+  font-family: Urbanist, sans-serif;
+  letter-spacing: 0.1cm;
+  font-size: 1.5em;
+}
+
+#info-left {
+  width: 30%;
+  text-align: left;
+  font-family: Urbanist, sans-serif;
+}
+
+#info-right {
+  width: 30%;
+  text-align: right;
+  font-family: Urbanist, sans-serif;
+}
+
+.result-box {
+  background-color: ;
+  grid-column: 1/2;
+  padding: 5px;
+  border-radius: 20px;
+  width: 20%;
+  height: 20%;
+  box-sizing: fixed;
+  font-family: Urbanist, sans-serif;
 }
 
 /* Media queries for large and medium screens below width of 1100px*/
@@ -275,6 +274,7 @@ button:hover {
   }
 }
 
+/* Media queries for small screens with a max width of 600px*/
 @media screen and (max-width: 320px) {
 
   h3 {

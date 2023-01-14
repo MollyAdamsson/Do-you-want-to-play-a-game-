@@ -1,14 +1,21 @@
+//App global variables
 let computerScore = 0;
 let playerScore = 0;
 let round = 1;
 let isTiming = false;
+let isMuted = false;
+let timer;
+let maxRounds = 6;
 
+/** Contains the round, player, computer and round abilities
+*/
 document.getElementById("round").innerHTML = "Round: " + round;
 document.getElementById("player-score").innerHTML = "Player Score: " + playerScore;
 document.getElementById("computer-score").innerHTML = "Computer Score: " + computerScore;
-
 document.getElementById("reset-button").addEventListener("click", resetGame);
 
+/** Contains the function that resets the game, it clears the timer and score/round.
+  */
 function resetGame() {
   computerScore = 0;
   playerScore = 0;
@@ -21,10 +28,17 @@ function resetGame() {
   document.getElementById("time-button").innerHTML = "Start Game";
   isTiming = false;
   document.getElementById("result").innerHTML ="";
+
+  document.getElementById("rock").disabled = false;
+  document.getElementById("paper").disabled = false;
+  document.getElementById("scissors").disabled = false;
+  document.getElementById("lizard").disabled = false;
+  document.getElementById("spock").disabled = false;
 }
 
-let maxRounds = 6;
-
+/**Disables the buttons after 5 rounds of playing, only way 
+* of starting the game again is if the player click on reset.
+*/
 function disableButtons() {
   document.getElementById("rock").disabled = true;
   document.getElementById("paper").disabled = true;
@@ -33,6 +47,8 @@ function disableButtons() {
   document.getElementById("spock").disabled = true;
 }
 
+/**It checks the round limits and a sign saying "game over" appears 
+*/
 function checkRoundLimit() {
   if (round === maxRounds) {
     disableButtons();
@@ -40,8 +56,9 @@ function checkRoundLimit() {
   }
 }
 
-let timer;
-
+/**Function for the timer which shows a clock ticking down from 30 seconds. 
+ * It is activated by clicking "start game" or one of the game buttons.
+  */
 function startTimer(){
   if(!isTiming){
     clearInterval(timer);
@@ -60,7 +77,6 @@ function startTimer(){
   }else{
     return;
   }
-}
 
 document.getElementById("rock").addEventListener("click", startTimer);
 document.getElementById("paper").addEventListener("click", startTimer);
@@ -69,8 +85,10 @@ document.getElementById("scissors").addEventListener("click", startTimer);
 document.getElementById("lizard").addEventListener("click", startTimer);
 document.getElementById("spock").addEventListener("click", startTimer);
 document.getElementById("time-button").addEventListener("click", startTimer);
+}
 
-
+/**Additions to the time-buttons function
+  */
 document.getElementById("time-button").addEventListener("click", function(){
   if(!isTiming){
     clearInterval(timer);
@@ -91,30 +109,8 @@ document.getElementById("time-button").addEventListener("click", function(){
   }
 });
 
-document.getElementById("reset-button").addEventListener("click", resetGame);
-
-function resetGame() {
-  computerScore = 0;
-  playerScore = 0;
-  round = 1;
-  document.getElementById("round").innerHTML = "Round: " + round;
-  document.getElementById("player-score").innerHTML = "Player Score: " + playerScore;
-  document.getElementById("computer-score").innerHTML = "Computer Score: " + computerScore;
-
-  clearInterval(timer);
-  document.getElementById("time-button").innerHTML = "Start Game";
-  isTiming = false;
-  document.getElementById("result").innerHTML ="";
- 
-  document.getElementById("rock").disabled = false;
-  document.getElementById("paper").disabled = false;
-  document.getElementById("scissors").disabled = false;
-  document.getElementById("lizard").disabled = false;
-  document.getElementById("spock").disabled = false;
-}
-
-let isMuted = false;
-
+/** Function for the mute-button. It gives the option to mute and unmute
+  */
 document.getElementById("mute-button").addEventListener("click", toggleMute);
 
   function toggleMute() {

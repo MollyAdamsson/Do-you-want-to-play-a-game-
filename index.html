@@ -4,21 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+   
+<!-- Link to font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer">
 
+    <!-- Link to CSS Stylesheet -->
 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
+<!-- Title -->
 <title>Do you want to play a game?</title>
 
 </head>
 
 <body>
-
+<!-- Main title of the game-->
     <h1 id="main-title" class="main-logo">Rock, Paper, Scissors, Lizard or Spock?</h1>
 
+<!-- Main buttons -->
     <div id="main-buttons">
         <button id="time-button">Start Game</button>
         <button id="reset-button">Reset Game <i class="fa-solid fa-arrows-rotate"></i></button>
@@ -26,7 +30,7 @@
     </div>
 
     <br>
-
+<!-- Game area buttons -->
     <div id="game-area">
         <button id="rock" onclick="playRock(); play('rock')">Rock <i class="fa-solid fa-hand-back-fist"></i></button>
         <button id="paper" onclick="playPaper(); play('paper')">Paper <i class="fa-solid fa-hand"></i></button>
@@ -36,7 +40,7 @@
     </div>
 
     <br>
-
+<!-- Score area -->
     <div id="score-area">
         <div id="player-score" class="round-box-1">Player Score: 0</div>
         <div id="round" class="round-box-2">Round: 1</div>
@@ -45,6 +49,7 @@
 
     <br>
 
+<!-- Box containing rules, information and result-->
     <div id="rules" class="box-rules">
         <h3>Rock, Paper, Scissors, Lizard, Spock is a game of 
             chance that expands the traditional game of Rock, Paper, Scissors.</h3> 
@@ -55,20 +60,23 @@
             <p id="info-right">Click on the button that says "Start Game" to set off the timer.<br>
             You then have 30 seconds and 5 rounds to finish the game.
             <br>
-            Which weapon will you chose?</p>
+            <b>Which weapon will you chose?</b></p>
         </div>
         <br>    
     </div>
 
     <br>
 
-    
+<!-- Soundlinks -->
     <audio id="rocksound" src="assets/audio/rock.wav"></audio>
     <audio id="papersound" src="assets/audio/paper.wav"></audio>
     <audio id="scissorssound" src="assets/audio/scissors.wav"></audio>
     <audio id="lizardsound" src="assets/audio/lizzard.mp3"></audio>
     <audio id="spocksound" src="assets/audio/laser.wav"></audio>
+
+<!-- Link to script.js --> 
     <script src="assets/js/script.js"></script>
+<!-- Link to js audio  -->
     <script src="assets/js/audio.js"></script>
 
 </body>
