@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <title>Do you want to play a game?</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+<title>Do you want to play a game?</title>
+
 </head>
 
 <body>
@@ -21,24 +25,26 @@
         <button id="mute-button">Mute Game</button>
     </div>
 
-        <br>
+    <br>
 
-        <div id="game-area">
-            <button id="rock" onclick="playRock(); play('rock')">Rock <i class="fa-solid fa-hand-back-fist"></i></button>
-            <button id="paper" onclick="playPaper(); play('paper')">Paper <i class="fa-solid fa-hand"></i></button>
-            <button id="scissors" onclick="playScissors(); play('scissors')">Scissors <i class="fa-solid fa-hand-scissors"></i></button>
-            <button id="lizard" onclick="playLizard(); play('lizard')">Lizard <i class="fa-solid fa-hand-lizard"></i></button>
-            <button id="spock" onclick="playSpock(); play('spock')">Spock <i class="fa-solid fa-hand-spock"></i></button>
-        </div>
+    <div id="game-area">
+        <button id="rock" onclick="playRock(); play('rock')">Rock <i class="fa-solid fa-hand-back-fist"></i></button>
+        <button id="paper" onclick="playPaper(); play('paper')">Paper <i class="fa-solid fa-hand"></i></button>
+        <button id="scissors" onclick="playScissors(); play('scissors')">Scissors <i class="fa-solid fa-hand-scissors"></i></button>
+        <button id="lizard" onclick="playLizard(); play('lizard')">Lizard <i class="fa-solid fa-hand-lizard"></i></button>
+        <button id="spock" onclick="playSpock(); play('spock')">Spock <i class="fa-solid fa-hand-spock"></i></button>
+    </div>
 
-        <br>
+    <br>
 
-        <div id="score-area">
-            <div id="player-score" class="round-box-1">Player Score: 0</div>
-            <div id="round" class="round-box-2">Round: 1</div>
-            <div id="computer-score" class="round-box-3">CPU Score: 0</div>
-        </div>
-        <br>
+    <div id="score-area">
+        <div id="player-score" class="round-box-1">Player Score: 0</div>
+        <div id="round" class="round-box-2">Round: 1</div>
+        <div id="computer-score" class="round-box-3">CPU Score: 0</div>
+    </div>
+
+    <br>
+
     <div id="rules" class="box-rules">
         <h3>Rock, Paper, Scissors, Lizard, Spock is a game of 
             chance that expands the traditional game of Rock, Paper, Scissors.</h3> 
@@ -47,7 +53,8 @@
             The only difference is that this game has some extra options for you to choose between.</p>
             <div id="result" class="result-box"></div>
             <p id="info-right">Click on the button that says "Start Game" to set off the timer.<br>
-            You then have 30 seconds and 5 rounds to finish the game.<br>
+            You then have 30 seconds and 5 rounds to finish the game.
+            <br>
             Which weapon will you chose?</p>
         </div>
         <br>    

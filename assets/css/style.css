@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Urbanist:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Nabla&family=Slackey&family=Urbanist:wght@300&display=swap');
+
+/* Sets the initial styling for the page */
 
 body { 
   background-color: #3661b0;
@@ -9,28 +11,30 @@ body {
 }
 
 #main-title {
-font-family: Luckiest guy, sans-serif; 
+font-family: Nabla, sans-serif; 
 color: white;
-letter-spacing: 0.2cm;
+letter-spacing: 0.3cm;
+font-size: 40px;
 }
 
 #main-buttons {
   display: flex;
   justify-content: center;
   margin-top: 10px;
+  font-family: Nabla, sans-serif;
 }
 
 h3 {
   margin: 0 5px;
   padding: 15px 10px;
-  font-family: Luckiest guy, sans-serif;
+  font-family: Urbanist, sans-serif;
   letter-spacing: 0.1cm;
   font-size: 1.5em;
 }
 
 .box-rules {
   margin: 0 10px;
-  padding: 5px 30px;
+  padding: 5px 25px;
   font-size: 1.2em;
   border-radius: 80px;
   background-color: #264f7d;
@@ -42,8 +46,6 @@ h3 {
   display: flex;
   justify-content: space-between;
   letter-spacing: 2px;
-
-  
   justify-content: space-around;
   
 }
@@ -73,6 +75,7 @@ h3 {
 
 #main-buttons button {
   margin: 0 10px;
+  font-family: Bungee shade, sans-serif;
   padding: 10px 60px;
   font-size: 1.2em;
   border-radius: 80px;
