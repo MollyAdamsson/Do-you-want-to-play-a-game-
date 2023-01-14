@@ -268,9 +268,15 @@ button:hover {
     width: 40%;
     height: 40%;
   }
+
+  button {
+    margin: 2px;
+    padding: 0;
+  }
 }
 
 @media screen and (max-width: 320px) {
+
   h3 {
     font-size: 0.6em;
     padding: 4px 1px;
@@ -290,9 +296,38 @@ button:hover {
   }
 
   #game-area {
-    display: flex;
-    flex-wrap: nowrap;
+    font-size: 0.6em;
+    padding: 3px 15px;
+    margin:5px;
+  }
+
+  .round-box-1, .round-box-2, .round-box-3 {
+    max-width: 80px;
+    min-width: 80px;
+    flex-basis: 100%;
+    margin: 5px;
+    padding: 5px;
+    font-size: 0.8em;
     justify-content: center;
   }
+
+  body {
+    background-attachment: scroll;
+  }
+
+  #info-left, #info-right {
+    width: 100%;
+    text-align: center;
+  }
   
+  .result-box {
+    width: 60%;
+    height: 60%;
+  }
+
+  button {
+    margin: 2px;
+    padding: 0;
+  }
+
 }
