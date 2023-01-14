@@ -163,3 +163,136 @@ button:hover {
   background-color: #3CB371;
   transform: scale(1.1);
 }
+
+/* Media queries for large and medium screens below width of 1100px*/
+@media screen and (max-width: 1100px) {
+  #game-area {
+    flex-wrap: wrap;
+  }
+
+  .round-box-1, .round-box-2, .round-box-3 {
+    flex-basis: 100%;
+    margin-bottom: 10px;
+    max-width: 150px;
+    min-width: 150px;
+  }
+  h3 {
+    font-size: 1.2em;
+    padding: 10px 5px;
+  }
+
+  .box-rules {
+    padding: 2px 15px;
+  }
+
+  #main-buttons button {
+    padding: 8px 40px;
+    font-size: 1em;
+  }
+}
+
+/* Media queries for medium to small screens with a max width of 800px*/
+@media screen and (max-width: 800px) {
+  h3 {
+    font-size: 1em;
+    padding: 8px 2px;
+  }
+
+  .box-rules {
+    padding: 1px 10px;
+  }
+
+  #main-buttons button {
+    padding: 5px 30px;
+    font-size: 0.8em;
+  }
+   
+  #game-area {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+
+  .round-box-1, .round-box-2, .round-box-3 {
+    flex-basis: 100%;
+    margin-bottom: 10px;
+    max-width: 150px;
+    min-width: 150px;
+  }
+}
+
+/* Media queries for small screens with a max width of 600px*/
+@media screen and (max-width: 600px) {
+  h3 {
+    font-size: 0.8em;
+    padding: 6px 2px;
+  }
+
+  box-rules {
+    padding: 1px 10px;
+  }
+
+  #main-buttons button {
+    padding: 5px 30px;
+    font-size: 0.8em;
+    
+  }
+
+  #game-area {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+
+  .round-box-1, .round-box-2, .round-box-3 {
+    max-width: 120px;
+    min-width: 120px;
+    flex-basis : 100%;
+    margin-bottom: 10px;
+  }
+
+  body {
+    background-attachment: scroll;
+  }
+
+  #main-title {
+    font-size: 30px;
+  }
+
+  #info-left, #info-right {
+    width: 100%;
+    text-align: center;
+  }
+
+  .result-box {
+    width: 40%;
+    height: 40%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  h3 {
+    font-size: 0.6em;
+    padding: 4px 1px;
+  }
+
+  .box-rules {
+    padding: 1px 5px;
+  }
+
+  main-title {
+    font-size: 20px;
+  }
+
+  #main-buttons button {
+    padding: 3px 15px;
+    font-size: 0.6em;
+  }
+
+  #game-area {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  
+}
