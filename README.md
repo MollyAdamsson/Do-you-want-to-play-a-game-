@@ -25,11 +25,70 @@ This was the first mock up I did for the game, and i was looking for a visual di
 
 ## The structure of the site 
 
-This game is as explained based on the basic game of rock, paper and scissors. It is a game of chance where two, or more, contestants play against each other. This game has some extra features which are the lizard and Spock options.  
-<br>
+This game is as explained based on the basic game of rock, paper and scissors. It is a game of chance where two, or more, contestants play against each other. This game has some extra features which are the lizard and Spock options.
 When entering on to the siteyou are met with a display of blue. This was added with the idea of giving the user a welcoming and warm feeling.
+
 <br>
-There is a header at the top which present the game, underneath you can find three buttons, each with their own ability. Underneath that you can find five more buttons which represents the meaning of the game.  
+
+There is a header at the top which present the game, underneath you can find three buttons, each with their own ability. If you click "start game" a timer of 30 seconds will start, this was added to make the game a bit more exciting and to "rush" the player to make a decision due to the fact that there is not really any "difficulty levels" of the game. I wanted this feature so that it looks a little more like a game as well. Beside that button there is a "Reset game" optiob, this button resets the game when the player wants to go for another round. On the right on the same row one will find a mute button as well. 
+
+<br>
+Underneath that you can find five more buttons which represents the meaning of the game and they have their of abilitys and functions.
+Additionally there are three boxes which contains the player score, round and computer score. This was added to make sure that the player is aware of the status of the game whilst playing.
+
+<br>
+Later underneath that area the player will find the information and result box. The rules of the game and genreal information is provided here. The section in the middle shows what the player and computer chose and who is leading/losing.
+
+## Design Choices
+
+* ### Typography
+
+* ### Color Scheme
+
+* ### Placing
+
+* ### Score and Timer
+
+* ### Sound Control
+
+* ### The Game
+
+# Technologies Used
+
+# Testing
+
+* ### Lighthouse
+
+* ### Validator HTML
+* ### validator CSS
+* ### Validator Javascript
+ 
+# Deployment
+
+### **To deploy the project**
+1. 
+2. 
+3. 
+4. 
+
+# Credits 
+* ## Content
+
+* The font came from: 
+* The color palette was compiled from:
+* The icons came from [Font Awesome]
+* The wireframe was created via [Balsamiq]
+
+* ## Media
+* The sound effects was gathered from [Free sound Effects](https://www.freesoundeffects.com)
+* The favicon came from [FreeFavIcon]
+
+# Acknowledgements
+
+
+
+Molly Adamsson, 2023.
+
 
 
 
