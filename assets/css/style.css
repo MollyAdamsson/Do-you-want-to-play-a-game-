@@ -6,15 +6,16 @@ body {
   background-color: #3661b0;
   background-attachment: fixed;
   height: auto;
-  width: auto;
   text-align: center;
+  width: auto;
 }
 
 #main-title {
-font-family: Nabla, sans-serif; 
 color: white;
-letter-spacing: 0.3cm;
+font-family: Nabla, sans-serif; 
 font-size: 40px;
+letter-spacing: 0.3cm;
+
 }
 
 /* The start game, reset game and mute button  */
@@ -23,14 +24,13 @@ font-size: 40px;
   display: flex;
   justify-content: center;
   margin-top: 10px;
-  font-family: Nabla, sans-serif;
 }
 
 #main-buttons button {
   margin: 0 10px;
   font-family: Bungee shade, sans-serif;
-  padding: 10px 60px;
   font-size: 1.2em;
+  padding: 10px 60px;
   border-radius: 80px;
   background-color: #264f7d;
   color: rgb(251, 251, 251);
@@ -153,13 +153,11 @@ h3 {
 }
 
 .result-box {
-  background-color: ;
   grid-column: 1/2;
   padding: 5px;
   border-radius: 20px;
   width: 20%;
   height: 20%;
-  box-sizing: fixed;
   font-family: Urbanist, sans-serif;
 }
 
@@ -329,5 +327,4 @@ h3 {
     margin: 2px;
     padding: 0;
   }
-
 }

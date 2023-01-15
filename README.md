@@ -39,37 +39,70 @@ Additionally there are three boxes which contains the player score, round and co
 <br>
 Later underneath that area the player will find the information and result box. The rules of the game and genreal information is provided here. The section in the middle shows what the player and computer chose and who is leading/losing.
 
+- image of header font here - 
+
 ## Design Choices
 
 * ### Typography
+* The sites main heading is called 'Nabla', This font was chosen considering I wanted the feeling of entering a game. I thought it reminded me of some old school arcade games and I wanted the player to have that feeling as well.
+* I later chose 'Bungee shade' for the main buttons, mainly so that they stood out a bit more from the rest, and so that they also had some 'game-feeling'
+* To make the rest more readable and coherent I decided to go for the 'Urbanista' font.
 
 * ### Color Scheme
+* The color schemes chosen was to yet again, welcome the player with a soft blue background. The focus was to keep it calm and simple for the eye.
 
 * ### Placing
+* The placing of buttons and informaton box were positioned to make it easy to navigate between the the sections. The different buttons and boxes are placed in the order of necessity. 
+
+- image here - 
 
 * ### Score and Timer
+* The timer is the same as the 'start game' button, mianly so that the player easily can see how they are doing time-wise. The score is placed in the middle of the player and computer score, solely due to the fact that it's in the middle of the entire page and so that that its easy to see it. 
+
+- image here -
 
 * ### Sound Control
 
+* If the player want they can easily mute the game by using the 'mute game' button on the top right side of the page.
+
+- image here - 
+
 * ### The Game
+* The game it self is based upon the original game of rock, paper, scissors.
+* This particular game has two extra options. Lizard and Spock.
+* The player have 5 round to complete the game against the computer, they can choose whichever weapon they want and on random they will see what the computer chose.
+* When the game is finished, they can reset the game and try again.
+
+- image of a result here -
 
 # Technologies Used
+* [HTML5](https://html.spec.whatwg.org/) - provides the content and structure for the website.
+* [CSS](https://www.w3.org/Style/CSS/Overview.en.html) - provides the styling.
+* [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - provides the interactivity.
+* [Balsamiq](https://balsamiq.com/wireframes/) - used to create the wireframes.
+* [Gitpod](https://www.gitpod.io/#get-started) - used to deploy the website.
+* [Github](https://github.com/) - used to host and edit the website.
 
 # Testing
 
 * ### Lighthouse
-
+[Lighthouse](readme.images/perfrormance.png)
 * ### Validator HTML
+[HTML](readme.images/checking.png)
 * ### validator CSS
+[CSS](readme.images/checking.png)
 * ### Validator Javascript
+[Javascript]
  
 # Deployment
 
 ### **To deploy the project**
-1. 
-2. 
-3. 
-4. 
+1. When logging into github, navigate to the settings tab,
+2. Here you can find pages down on the left side
+3. A new page will load which will present the branch to master or main, and then the save option.
+4. Once the save button has been clicked and the page is reloaded there will be a link to the deployed site.
+
+[Deployed2]()
 
 # Credits 
 * ## Content

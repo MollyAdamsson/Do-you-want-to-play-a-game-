@@ -59,32 +59,29 @@ document.getElementById("reset-button").addEventListener("click", resetGame);
 /**Function for the timer which shows a clock ticking down from 30 seconds. 
  * It is activated by clicking "start game" or one of the game buttons.
   */
-  function startTimer(){
-    if(!isTiming){
-      clearInterval(timer);
-     let time = 30;
-     document.getElementById("time-button").innerHTML = "Time: " + time;
-     timer = setInterval(function(){
-        time--;
-       document.getElementById("time-button").innerHTML = "Time: " + time;
-        if(time === 0){
-         clearInterval(timer);
-         document.getElementById("time-button").innerHTML = "Start Game";
-          isTiming = false;
-        }
-      }, 1000);
-     isTiming = true;
-   }else{
-      return;
-   }
-
-  document.getElementById("rock").addEventListener("click", startTimer);
-  document.getElementById("paper").addEventListener("click", startTimer);
-  document.getElementById("scissors").addEventListener("click", startTimer);
-  document.getElementById("scissors").addEventListener("click", startTimer);
-  document.getElementById("lizard").addEventListener("click", startTimer);
-  document.getElementById("spock").addEventListener("click", startTimer);
-  document.getElementById("time-button").addEventListener("click", startTimer);
+function startTimer() {
+  if(!isTiming){
+    clearInterval(timer);
+    let time = 30;
+    document.getElementById("time-button").innerHTML = "Time: " + time;
+    timer = setInterval(function(){
+      time--;
+      document.getElementById("time-button").innerHTML = "Time: " + time;
+      if(time === 0){
+        clearInterval(timer);
+        document.getElementById("time-button").innerHTML = "Start Game";
+        isTiming = false;
+      }
+    }, 1000);
+    isTiming = true;
+  }else{
+    return;
+  }
+document.getElementById("rock").addEventListener("click", startTimer);
+document.getElementById("paper").addEventListener("click", startTimer);
+document.getElementById("scissors").addEventListener("click", startTimer);
+document.getElementById("lizard").addEventListener("click", startTimer);
+document.getElementById("spock").addEventListener("click", startTimer);
 }
 
 /**Additions to the time-buttons function
@@ -173,3 +170,7 @@ function getResult(playerChoice, computerChoice) {
     return "Oh no, the computer wins!";
   }
 }
+
+
+
+
