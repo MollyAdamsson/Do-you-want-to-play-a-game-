@@ -48,6 +48,7 @@ Later underneath that area the player will find the information and result box. 
 
 * I later chose 'Bungee shade' for the main buttons, mainly so that they stood out a bit more from the rest, and so that they also had some 'game-feeling'
 * To make the rest more readable and coherent I decided to go for the 'Urbanista' font.
+
 ![Main Buttons](readme.images/mainbuttons.png)
 
 * ### Color Scheme
@@ -55,16 +56,18 @@ Later underneath that area the player will find the information and result box. 
 
 * ### Placing
 * The placing of buttons and informaton box were positioned to make it easy to navigate between the the sections. The different buttons and boxes are placed in the order of necessity. 
+
 ![Game buttons](readme.images/gamescorebtn.png)
 
 * ### Score and Timer
-* The timer is the same as the 'start game' button, mianly so that the player easily can see how they are doing time-wise. The score is placed in the middle of the player and computer score, solely due to the fact that it's in the middle of the entire page and so that that its easy to see it. 
+* The timer is the same as the 'start game' button, mainly so that the player easily can see how they are doing time-wise. The score is placed in the middle of the player and computer score, solely due to the fact that it's in the middle of the entire page and so that that its easy to see it. 
+![Start Game]()
 
 * ### Sound Control
 
 * If the player want they can easily mute the game by using the 'mute game' button on the top right side of the page.
 
-- mute button here - 
+![Mute](readme.images/mute.png)
 
 * ### The Game
 * The game it self is based upon the original game of rock, paper, scissors.
@@ -73,7 +76,7 @@ Later underneath that area the player will find the information and result box. 
 * When the game is finished, they can reset the game and try again.
 
 ![Score](readme.images/result.png)
-![Score](readme.images/result2.png
+![Score](readme.images/result2.png)
 
 # Technologies Used
 * [HTML5](https://html.spec.whatwg.org/) - provides the content and structure for the website.
@@ -108,13 +111,13 @@ Later underneath that area the player will find the information and result box. 
 # Credits 
 * ## Content
 
-* The font came from: 
-* The icons came from [Font Awesome]()
-* The wireframe was created via [Balsamiq]
+* The font came from: [Google fonts](https://fonts.google.com/about)
+* The icons came from [Font Awesome](https://fontawesome.com/icons)
+* The wireframe was created via [Balsamiq](https://balsamiq.cloud/srkzill/projects)
 
 * ## Media
 * The sound effects was gathered from [Free sound Effects](https://www.freesoundeffects.com)
-* The favicon came from [FreeFavIcon]
+* The favicon came from [FreeFavIcon](https://freefavicon.com/freefavicons/)
 
 # Acknowledgements
 

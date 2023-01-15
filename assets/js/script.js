@@ -77,12 +77,14 @@ function startTimer() {
   }else{
     return;
   }
+
+}
+
 document.getElementById("rock").addEventListener("click", startTimer);
 document.getElementById("paper").addEventListener("click", startTimer);
 document.getElementById("scissors").addEventListener("click", startTimer);
 document.getElementById("lizard").addEventListener("click", startTimer);
 document.getElementById("spock").addEventListener("click", startTimer);
-}
 
 /**Additions to the time-buttons function
   */
