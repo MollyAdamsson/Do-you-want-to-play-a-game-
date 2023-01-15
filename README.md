@@ -54,13 +54,13 @@ Later underneath that area the player will find the information and result box. 
 * The color schemes chosen was to yet again, welcome the player with a soft blue background. The focus was to keep it calm and simple for the eye.
 
 * ### Placing
-* The placing of buttons and informaton box were positioned to make it easy to navigate between the the sections. The different buttons and boxes are placed in the order of necessity. 
+* The placing of buttons and information box were positioned to make it easy to navigate between the sections. The different buttons and boxes are placed in the order of necessity. 
 
 ![Game buttons](readme.images/gamescorebtn.png)
 
 * ### Score and Timer
 * The timer is the same as the 'start game' button, mainly so that the player easily can see how they are doing time-wise. The score is placed in the middle of the player and computer score, solely due to the fact that it's in the middle of the entire page and so that that it's easy to see it. 
-![Start Game]()
+![Start Game](readme.images/Startgame.png)
 
 * ### Sound Control
 
@@ -72,6 +72,7 @@ Later underneath that area the player will find the information and result box. 
 * The game it self is based upon the original game of rock, paper, scissors.
 * This particular game has two extra options. Lizard and Spock.
 * The player have 5 round to complete the game against the computer, they can choose whichever weapon they want and on random they will see what the computer chose.
+* They have 30 seconds to finish
 * When the game is finished, they can reset the game and try again.
 
 ![Score](readme.images/result.png)
