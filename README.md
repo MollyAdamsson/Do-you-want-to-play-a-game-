@@ -114,7 +114,7 @@ Later underneath that area the player will find the information and result box. 
 4. Once the save button has been clicked and the page is reloaded there will be a link to the deployed site.
 
 ![Deployed2](readme.images/deploy2.png)
-![Deployed1](readme.images/deploi1.png)
+![Deployed2](readme.images/deploy3.png)
 
 # Credits 
 * ## Content
