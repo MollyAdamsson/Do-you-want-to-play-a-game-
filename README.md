@@ -95,7 +95,7 @@ Later underneath that area the player will find the information and result box. 
 * ### validator CSS
 ![CSS](readme.images/checking.png)
 * ### Validator Javascript
-[Javascript]
+![Javascript](readme.images/validator%20js.png)
  
 # Deployment
 
