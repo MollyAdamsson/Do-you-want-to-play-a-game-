@@ -120,8 +120,7 @@ Later underneath that area the player will find the information and result box. 
 * The favicon came from [FreeFavIcon](https://freefavicon.com/freefavicons/)
 
 # Acknowledgements
-
-
+This project was the Portfolio 2 Project for the Full Stack Software Developer diploma at the [Code Institute](https://codeinstitute.net/). I would Like to thank the slack community and the Tutor Assistance for helping me with me questions.  
 
 Molly Adamsson, 2023.
 
